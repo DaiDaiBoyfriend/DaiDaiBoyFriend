@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻列表</title>
+    <style>
+        /* body {
+            background-color: thistle;
+        } */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        a{
+            text-decoration: none;
+        }
+
+        img {
+            width: 350px;
+        }
+
+        /* 设置容器的样式 */
+        .news-wrapper {
+            /* 设置宽度 */
+            width: 350px;
+            /* 设置高度 */
+            height: 358px;
+            /* 设置居中 */
+            margin-top: 10px;
+            margin-left: 700px;
+            /* 设置背景颜色 */
+            background-color: white;
+
+            /* 设置上边框 */
+            border-top: 1px solid #ddd;
+        }
+
+        
+
+        /* 设置news-title */
+        .news-title{
+            /* 为了边框和文字宽度一致，需要将h3转换为行内块元素 */
+            display: inline-block;
+            /* 设置高度 */
+            height: 40px;
+            /* 设置上边框 */
+            border-top: 1px red solid;
+            /* 通过margin-top将h2上移，盖住上边框 */
+            margin-top: -1px;
+
+        }
+
+        /* 设置title中超链接的样式 */
+        .news-title a{
+            display: inline-block;
+            /* 去除下划线 */
+            text-decoration: none;
+            color: #40406b;
+            /* 设置文字的加粗效果 */
+            font-weight: bold;
+            /* 设置上外边距 */
+            margin-top: 5px;
+        }
+
+        /* 设置图片容器的高度 */
+        .news-img{
+            height: 190px;
+        }
+
+        /* 设置图片的文字效果 */
+        .news-img .img-title{
+            /* 向上移动文字 */
+            margin-top: -36px;
+            /* 设置字体颜色 */
+            color: #40406b;
+            /* 设置加粗 */
+            font-weight: bold;
+            /* 设置padding */
+            padding-left: 40px;
+        }
+
+        /* 设置新闻列表 */
+        .new-list{
+            /* 设置字体大小 */
+            font-size: 14px;
+            /* 外边距 */
+            margin-top: 10px;
+            /* 设置项目符号 */
+            list-style: none; 
+            
+        }
+        
+        /* 通过before伪元素来为每一个li添加项目符号 */
+        .new-list li::before{
+            content: '■';
+            color: rgba(206, 206, 206, 0.377);
+            font-size: 12px;
+            margin-right: 5px;
+        }
+        .new-list li{
+            margin-bottom: 10px;
+        }
+
+        /* 设置li */
+        .new-list li a{
+            /* 设置字体颜色 */
+            color: #666;
+            /* 设置字体大小 */
+            font-size: 14px;
+        }
+
+      
+
+        .new-list li a:hover{
+            color: rgb(194, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 创建新闻列表外层容器 -->
+    <div class="news-wrapper">
+        <!-- 创建一个标题标签 -->
+        <h3 class="news-title">
+            <a href="#">游戏</a>
+        </h3>
+
+        <!-- 创建一个图片的容器 -->
+        <div class="news-img">
+            <a href="#">
+                <img src="../image/1.png" alt="Scout">
+
+                <!-- 创建图片标题 -->
+                <h3 class="img-title">
+                    Scout瑞兹符文指引流浪生死间
+                </h3>
+            </a>
+        </div>
+        <!-- 新闻列表 -->
+        <ul class="new-list">
+            <li>
+                <a href="#">TOP2:Fudge天崩地裂猛龙叩天门</a>
+            </li>
+            <li>
+                <a href="#">TOP3:BeryL派克血影潜行杀机四伏</a>
+            </li>
+            <li>
+                <a href="#">TOP4:Khan惊鸿落雷万伏灭魂阵</a>
+            </li>
+            <li>
+                <a href="#">TOP5:Flandre狂徒末路爆弹造极境</a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="news-wrapper">
+        <!-- 创建一个标题标签 -->
+        <h3 class="news-title">
+            <a href="#">游戏</a>
+        </h3>
+
+        <!-- 创建一个图片的容器 -->
+        <div class="news-img">
+            <a href="#">
+                <img src="../image/1.png" alt="Scout">
+
+                <!-- 创建图片标题 -->
+                <h3 class="img-title">
+                    Scout瑞兹符文指引流浪生死间
+                </h3>
+            </a>
+        </div>
+        <!-- 新闻列表 -->
+        <ul class="new-list">
+            <li>
+                <a href="#">TOP2:Fudge天崩地裂猛龙叩天门</a>
+            </li>
+            <li>
+                <a href="#">TOP3:BeryL派克血影潜行杀机四伏</a>
+            </li>
+            <li>
+                <a href="#">TOP4:Khan惊鸿落雷万伏灭魂阵</a>
+            </li>
+            <li>
+                <a href="#">TOP5:Flandre狂徒末路爆弹造极境</a>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
